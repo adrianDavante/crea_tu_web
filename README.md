@@ -30,7 +30,8 @@ git add .
 git commit -m "Mensaje descriptivo"
 git push origin HEAD
 
-#Si además queremos añadir tags para ir dando saltos en puntos clave de nuestro dasarrollo podemos incluirlas facilmente:
+# Si además queremos añadir tags para ir dando saltos en puntos clave de nuestro 
+# desarrollo podemos incluirlas facilmente:
 git tag nombre-tag
 git push origin nombre-tag
 ```
