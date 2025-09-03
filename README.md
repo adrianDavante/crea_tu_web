@@ -1,7 +1,8 @@
 ## HERRAMIENTAS ÚTILES
 1. ICONOS SVG: https://www.svgrepo.com/
-2. COMPRIMIR IMÁGENES: https://squoosh.app/
-
+2. COMPRIMIR UNA IMAGEN: https://squoosh.app/
+3. COMPRIMIR VARIAS IMÁGENES: https://tinypng.com/
+4. MEDIR PERFORMANCE, ACCESIBILIDAD, BUENAS PRÁCTICAS Y SEO: https://web.dev/measure/
 
 ## COPIAR UN REPOSITORIO DE GITHUB
 Es importante tener en cuenta que para seguir esta guía debes tener enlazado Github con Visual Studio Code.
