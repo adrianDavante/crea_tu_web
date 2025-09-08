@@ -3,6 +3,8 @@
 2. COMPRIMIR UNA IMAGEN: https://squoosh.app/
 3. COMPRIMIR VARIAS IMÁGENES: https://tinypng.com/
 4. MEDIR PERFORMANCE, ACCESIBILIDAD, BUENAS PRÁCTICAS Y SEO: https://web.dev/measure/
+5. DOCUMENTACION SOBRE HTML, CSS Y JS: https://developer.mozilla.org/en-US/
+6. DOCUMENTACION SOBRE FLEX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ## COPIAR UN REPOSITORIO DE GITHUB
 Es importante tener en cuenta que para seguir esta guía debes tener enlazado Github con Visual Studio Code.

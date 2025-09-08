@@ -5,35 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Crea tu web</title>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"
+      defer
+    ></script>
+
+    <script src="js/scrollGSAP.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="#inicio">Inicio</a>
-        <a href="#disenio">Diseño</a>
-        <a href="#productos">Productos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#disenio" class="nav-link">Diseño</a>
+        <a href="#productos" class="nav-link">Productos</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
 
       <button class="toggle-button" id="toggle-button">
-        <img src="assets/icons/sol.svg" alt="icono para el cambio de tema" class="icono">
+        <img
+          src="assets/icons/sol.svg"
+          alt="icono para el cambio de tema"
+          class="icono"
+        />
       </button>
     </header>
-    <main> 
-        <div class="hero section-base">
+
+    <main>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+          <div class="hero section-base" id="inicio">
             <h1>Personaliza tu próxima web</h1>
 
-            <p>cambios</p>
             <div class="arrow">
-                <h2>↓</h2>
+              <h2 aria-label="Bajar a la siguiente sección">↓</h2>
             </div>
 
             <div class="hero-container-img">
-                <img src="assets/images/hero.webp" alt="Desarrollador haciendo una web">
+              <img
+                src="assets/images/hero.webp"
+                alt="Desarrollador haciendo una web"
+              />
             </div>
-        </div>  
+          </div>
 
+          <div class="descripcion section-base">
+            <div class="descripcion-container">
+              <div class="descripcion-img">
+                <img src="assets/images/desarrolladores.webp" alt="Desarrolladores hablando frente a un ordenador">
+              </div>
+
+              <div class="descripcion-texto">
+                <h2>Nuestra idea</h2>
+                <p>
+                  En un mundo digital en constante cambio, tu página web es
+                  mucho más que una simple tarjeta de presentación, es la puerta
+                  de entrada a tu marca. Creamos sitios web a medida que
+                  combinan diseño atractivo, funcionalidad y tecnología actual
+                  para ofrecer una experiencia fácil y rápida en cualquier
+                  dispositivo.
+                  <br /><br />
+                  Nuestro objetivo es potenciar tu presencia online y ayudarte a
+                  alcanzar tus metas, porque cada proyecto es único y el tuyo
+                  merece destacar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyectos section-base" id="disenio">
+            
+            <div class="proyecto-container">
+              <h2>Conoce algunos de nuestros diseños →</h2>
+            </div>
+
+            <div class="proyecto-container proyecto-1">
+              <div class="proyecto-contenido">
+                <div class="proyecto-contenido-img proyecto-1-img">
+                  <h3 class="proyecto-titulo">Comercio digital</h3>
+                </div>
+                <p class="proyecto-contenido-descripcion">
+                  Proyecto desarrollado para una empresa que buscaba implementar
+                  un ecommerce actual, atractivo y limpio en lineas generales.
+                  Buscamos destacar su color de marca tanto en la cabecera como
+                  en botones dentro de la web.
+                </p>
+                <p class="proyecto-contenido-info">
+                  Para más información pon el ratón sobre la imagen ↑
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="productos section-base" id="productos">
+            <h2>Productos</h2>
+          </div>
+
+          <div class="contacto section-base" id="contacto">
+            <h2>Solicita tu web</h2>
+          </div>
+        </div>
+      </div>
     </main>
+
     <footer>
       <p>Copyright 2025</p>
     </footer>
