@@ -168,13 +168,73 @@
             </div>
           </div>
 
+          <div class="spacer"></div>
+
           <div class="productos section-base" id="productos">
             <h2>Productos</h2>
             <div id="contenedor-productos" class="contenedor-productos"></div>
           </div>
 
+          <div class="spacer"></div>
+
           <div class="contacto section-base" id="contacto">
-            <h2>Solicita tu web</h2>
+            <div class="formulario-container">
+              <h2>Solicita tu web</h2>
+              <form
+                id="formulario-web"
+                class="formulario"
+                name="webForm"
+                method="POST"
+                netlify
+              >
+                <!-- Campo oculto para Netlify -->
+                <input type="hidden" name="form-name" value="webForm" />
+
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+
+                <label for="correo">Correo</label>
+                <input
+                  type="email"
+                  id="correo"
+                  name="correo"
+                  placeholder="tu@email.com"
+                  required
+                />
+
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="123 456 789"
+                  required
+                />
+
+
+                <label for="tipo-web">Tipo de web</label>
+                <select id="tipo-web" name="tipo-web" required>
+                  <option value="basica">Web básica</option>
+                  <option value="personalizada">Web personalizada</option>
+                </select>
+
+                <label for="descripcion">Descripción</label>
+                <textarea
+                  id="descripcion"
+                  name="descripcion"
+                  placeholder="Cuéntanos tu proyecto..."
+                  rows="5"
+                ></textarea>
+
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

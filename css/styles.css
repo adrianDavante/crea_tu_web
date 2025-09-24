@@ -111,6 +111,8 @@ a {
   margin: 0 auto;
 }
 
+.spacer { height: 50vh ;}
+
 /* ===========================
     HEADER
    =========================== */
@@ -421,3 +423,80 @@ header {
 .item .hover { opacity: 0; }
 .item:hover .hover { opacity: 1; }
 .item:hover .normal { opacity: 0; }
+
+
+/* ===============================
+   FORMULARIO
+   =============================== */
+
+.formulario-container {
+  height: 150vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.formulario label {
+  font-weight: 300;
+  color: var(--color-text-current);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-text-current);
+  padding: 8px 0;
+  font-size: 1rem;
+  color: var(--color-text-current);
+  transition: border-color var(--transition-speed), color var(--transition-speed);
+  resize: none;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: var(--color-text-current);
+  opacity: 0.7;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-bottom-color: var(--color-accent-current);
+}
+
+.formulario select {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.formulario option {
+  background-color: var(--color-bg-current);
+  color: var(--color-text-current);
+}
+
+.formulario button {
+  background-color: var(--color-accent-current);
+  color: var(--color-bg-current);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.formulario button:hover {
+  opacity: 0.9;
+}
